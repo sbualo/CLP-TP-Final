@@ -1,0 +1,12 @@
+
+{ 
+    crc :  3597512717232032900  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 4b40416e94ff458596cd85f560a0a608 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot controlador_vga_VIO_behav xil_defaultlib.controlador_vga_VIO" , 
+    buildDate : "Apr  4 2018" , 
+    buildTime : "19:30:32" , 
+    linkCmd : "C:\\Xilinx\\Vivado\\2018.1\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/controlador_vga_VIO_behav/xsimk.exe\"   \"xsim.dir/controlador_vga_VIO_behav/obj/xsim_0.win64.obj\" \"xsim.dir/controlador_vga_VIO_behav/obj/xsim_1.win64.obj\" \"C:\\Xilinx\\Vivado\\2018.1\\lib\\win64.o\\\\librdi_simulator_kernel.dll\"  \"C:\\Xilinx\\Vivado\\2018.1\\lib\\win64.o\\\\librdi_simbridge_kernel.dll\"" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

@@ -1,0 +1,25 @@
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 4b40416e94ff458596cd85f560a0a608 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip -L xpm --snapshot controlador_vga_VIO_behav xil_defaultlib.controlador_vga_VIO -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture vio_0_arch of entity xil_defaultlib.vio_0 [vio_0_default]
+Compiling architecture comportamiento of entity xil_defaultlib.contador_horizontal [contador_horizontal_default]
+Compiling architecture comportamiento of entity xil_defaultlib.generador_hsync [generador_hsync_default]
+Compiling architecture comportamiento of entity xil_defaultlib.contador_vertical [contador_vertical_default]
+Compiling architecture comportamiento of entity xil_defaultlib.generador_vsync [generador_vsync_default]
+Compiling architecture behavioral of entity xil_defaultlib.generador_blank [generador_blank_default]
+Compiling architecture behavioral of entity xil_defaultlib.image_generator [image_generator_default]
+Compiling architecture main_controler of entity xil_defaultlib.controlador_vga [controlador_vga_default]
+Compiling architecture behavioral of entity xil_defaultlib.controlador_vga_vio
+Built simulation snapshot controlador_vga_VIO_behav

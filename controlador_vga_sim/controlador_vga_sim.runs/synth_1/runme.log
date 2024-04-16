@@ -1,0 +1,332 @@
+
+*** Running vivado
+    with args -log controlador_vga.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source controlador_vga.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source controlador_vga.tcl -notrace
+Command: synth_design -top controlador_vga -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9792 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 383.598 ; gain = 97.508
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'controlador_vga' [C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/controlador_vga.vhd:19]
+INFO: [Synth 8-3491] module 'contador_horizontal' declared at 'C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/controlador_horizontal.vhd:6' bound to instance 'HCOUNT' of component 'contador_horizontal' [C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/controlador_vga.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'contador_horizontal' [C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/controlador_horizontal.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'contador_horizontal' (1#1) [C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/controlador_horizontal.vhd:14]
+INFO: [Synth 8-3491] module 'generador_hsync' declared at 'C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/gen_horizontal_sync.vhd:6' bound to instance 'HSINC_GEN' of component 'generador_hsync' [C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/controlador_vga.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'generador_hsync' [C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/gen_horizontal_sync.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'generador_hsync' (2#1) [C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/gen_horizontal_sync.vhd:15]
+INFO: [Synth 8-3491] module 'contador_vertical' declared at 'C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/controlador_vertical.vhd:6' bound to instance 'VCOUNT' of component 'contador_vertical' [C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/controlador_vga.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'contador_vertical' [C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/controlador_vertical.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'contador_vertical' (3#1) [C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/controlador_vertical.vhd:15]
+INFO: [Synth 8-3491] module 'generador_vsync' declared at 'C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/gen_vertical_sync.vhd:6' bound to instance 'VSINC_GEN' of component 'generador_vsync' [C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/controlador_vga.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'generador_vsync' [C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/gen_vertical_sync.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'generador_vsync' (4#1) [C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/gen_vertical_sync.vhd:16]
+INFO: [Synth 8-3491] module 'generador_blank' declared at 'C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/gen_pantalla_negro.vhd:6' bound to instance 'DARK_IMAGE_GEN' of component 'generador_blank' [C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/controlador_vga.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'generador_blank' [C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/gen_pantalla_negro.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'generador_blank' (5#1) [C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/gen_pantalla_negro.vhd:14]
+INFO: [Synth 8-3491] module 'image_generator' declared at 'C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/gen_imagenes.vhd:6' bound to instance 'IMAGE_GEN' of component 'image_generator' [C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/controlador_vga.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'image_generator' [C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/gen_imagenes.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'image_generator' (6#1) [C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/gen_imagenes.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'controlador_vga' (7#1) [C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/controlador_vga.vhd:19]
+WARNING: [Synth 8-3331] design image_generator has unconnected port vctr[9]
+WARNING: [Synth 8-3331] design image_generator has unconnected port vctr[8]
+WARNING: [Synth 8-3331] design image_generator has unconnected port vctr[7]
+WARNING: [Synth 8-3331] design image_generator has unconnected port vctr[6]
+WARNING: [Synth 8-3331] design image_generator has unconnected port vctr[5]
+WARNING: [Synth 8-3331] design image_generator has unconnected port vctr[4]
+WARNING: [Synth 8-3331] design image_generator has unconnected port vctr[3]
+WARNING: [Synth 8-3331] design image_generator has unconnected port vctr[2]
+WARNING: [Synth 8-3331] design image_generator has unconnected port vctr[1]
+WARNING: [Synth 8-3331] design image_generator has unconnected port vctr[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 439.098 ; gain = 153.008
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 439.098 ; gain = 153.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 439.098 ; gain = 153.008
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.srcs/constrs_1/imports/new/Arty-Z7-10-Master.xdc]
+Finished Parsing XDC File [C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.srcs/constrs_1/imports/new/Arty-Z7-10-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.srcs/constrs_1/imports/new/Arty-Z7-10-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/controlador_vga_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/controlador_vga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 762.000 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 762.000 ; gain = 475.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 762.000 ; gain = 475.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 762.000 ; gain = 475.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 762.000 ; gain = 475.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module contador_horizontal 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+Module generador_hsync 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module contador_vertical 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module generador_vsync 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module image_generator 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 762.000 ; gain = 475.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 766.863 ; gain = 480.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 766.938 ; gain = 480.848
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 778.195 ; gain = 492.105
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 778.195 ; gain = 492.105
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 778.195 ; gain = 492.105
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 778.195 ; gain = 492.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 778.195 ; gain = 492.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 778.195 ; gain = 492.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 778.195 ; gain = 492.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     1|
+|3     |LUT2 |    12|
+|4     |LUT3 |    10|
+|5     |LUT4 |    17|
+|6     |LUT5 |    11|
+|7     |LUT6 |    30|
+|8     |FDCE |    26|
+|9     |FDPE |     2|
+|10    |IBUF |     2|
+|11    |OBUF |     6|
++------+-----+------+
+
+Report Instance Areas: 
++------+------------+--------------------+------+
+|      |Instance    |Module              |Cells |
++------+------------+--------------------+------+
+|1     |top         |                    |   118|
+|2     |  HCOUNT    |contador_horizontal |    74|
+|3     |  HSINC_GEN |generador_hsync     |     1|
+|4     |  IMAGE_GEN |image_generator     |     3|
+|5     |  VCOUNT    |contador_vertical   |    30|
+|6     |  VSINC_GEN |generador_vsync     |     1|
++------+------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 778.195 ; gain = 492.105
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 778.195 ; gain = 169.203
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 778.195 ; gain = 492.105
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 786.512 ; gain = 512.762
+INFO: [Common 17-1381] The checkpoint 'C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.runs/synth_1/controlador_vga.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file controlador_vga_utilization_synth.rpt -pb controlador_vga_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 786.512 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 15 19:42:19 2024...

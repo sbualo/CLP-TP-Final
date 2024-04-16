@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon Apr 15 19:41:38 2024
+# Process ID: 8520
+# Current directory: C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.runs/synth_1
+# Command line: vivado.exe -log controlador_vga.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source controlador_vga.tcl
+# Log file: C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.runs/synth_1/controlador_vga.vds
+# Journal file: C:/Users/dora_/controlador_vga_sim/controlador_vga_sim.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source controlador_vga.tcl -notrace

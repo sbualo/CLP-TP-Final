@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1713220895">
+  <File Type="PA-TCL" Name="controlador_vga.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="controlador_vga_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="controlador_vga_reports.tcl"/>
+  <File Type="RDS-RDS" Name="controlador_vga.vds"/>
+  <File Type="RDS-UTIL" Name="controlador_vga_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="controlador_vga_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="controlador_vga.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="controlador_vga_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="controlador_vga_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Archivos_TPFinal/controlador_horizontal.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/Archivos_TPFinal/controlador_horizontal.vhd"/>
+        <Attr Name="ImportTime" Val="1712791611"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Archivos_TPFinal/controlador_vertical.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/Archivos_TPFinal/controlador_vertical.vhd"/>
+        <Attr Name="ImportTime" Val="1712791731"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Archivos_TPFinal/gen_horizontal_sync.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/Archivos_TPFinal/gen_horizontal_sync.vhd"/>
+        <Attr Name="ImportTime" Val="1712791643"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Archivos_TPFinal/gen_imagenes.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/Archivos_TPFinal/gen_imagenes.vhd"/>
+        <Attr Name="ImportTime" Val="1712791671"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Archivos_TPFinal/gen_pantalla_negro.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/Archivos_TPFinal/gen_pantalla_negro.vhd"/>
+        <Attr Name="ImportTime" Val="1712791665"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Archivos_TPFinal/gen_vertical_sync.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/Archivos_TPFinal/gen_vertical_sync.vhd"/>
+        <Attr Name="ImportTime" Val="1712791657"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Archivos_TPFinal/controlador_vga.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Downloads/Archivos_TPFinal/controlador_vga.vhd"/>
+        <Attr Name="ImportTime" Val="1712791634"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="controlador_vga"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/new/Arty-Z7-10-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../project_1_test/project_1_test.srcs/constrs_1/new/Arty-Z7-10-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1713125914"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

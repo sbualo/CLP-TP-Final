@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/controlador_horizontal.vhd" \
+"../../../../controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/controlador_vertical.vhd" \
+"../../../../controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/controlador_vga.vhd" \
+"../../../../controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/gen_horizontal_sync.vhd" \
+"../../../../controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/gen_imagenes.vhd" \
+"../../../../controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/gen_pantalla_negro.vhd" \
+"../../../../controlador_vga_sim.srcs/sources_1/imports/Archivos_TPFinal/gen_vertical_sync.vhd" \
+"../../../../controlador_vga_sim.srcs/sim_1/imports/Archivos_TPFinal/controlador_vga_tb.vhd" \
+
+# Do not sort compile order
+nosort

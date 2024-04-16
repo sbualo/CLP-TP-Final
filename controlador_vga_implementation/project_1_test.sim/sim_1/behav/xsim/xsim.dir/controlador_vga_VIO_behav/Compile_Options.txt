@@ -1,0 +1,1 @@
+-wto "4b40416e94ff458596cd85f560a0a608" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" -L "xpm" --snapshot "controlador_vga_VIO_behav" "xil_defaultlib.controlador_vga_VIO" -log "elaborate.log" 

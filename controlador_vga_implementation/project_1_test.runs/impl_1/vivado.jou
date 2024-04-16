@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sun Apr 14 18:09:06 2024
+# Process ID: 42100
+# Current directory: C:/Users/dora_/project_1_test/project_1_test.runs/impl_1
+# Command line: vivado.exe -log controlador_vga_VIO.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source controlador_vga_VIO.tcl -notrace
+# Log file: C:/Users/dora_/project_1_test/project_1_test.runs/impl_1/controlador_vga_VIO.vdi
+# Journal file: C:/Users/dora_/project_1_test/project_1_test.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source controlador_vga_VIO.tcl -notrace
